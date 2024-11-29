@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Bootstrap Calculator</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <!-- Font Awesome for Calculator Icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" class="input" readonly />
+      <div class="buttons">
+        <div class="row">
+          <div class="col-6">
+            <button onclick="clearDisplay()" class="clear-btn">C</button>
+          </div>
+          <div class="col-3">
+            <button onclick="backspace()" class="backspace-btn">←</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('/')">/</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <button onclick="appendToDisplay('7')">7</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('8')">8</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('9')">9</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('*')">x</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <button onclick="appendToDisplay('4')">4</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('5')">5</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('6')">6</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('+')">+</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <button onclick="appendToDisplay('1')">1</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('2')">2</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('3')">3</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('-')">-</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <button onclick="appendToDisplay('0')">0</button>
+          </div>
+          <div class="col-3">
+            <button onclick="appendToDisplay('.')">.</button>
+          </div>
+          <div class="col-6">
+            <button onclick="calculate()" class="equal-btn">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="calculator.js"></script>
+  </body>
+</html>
